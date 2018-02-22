@@ -1,8 +1,12 @@
 #!/usr/bin/ruby
 # coding: utf-8
+
+# ONVIF対応の防犯カメラの、SnapshotのURLを取得して表示する
+
 require 'socket'
 require 'open-uri'
 
+# 防犯カメラのセットアップ情報をここに書いておこう。
 cameraip = "192.168.2.1" #適当に変えて。
 onvifport = 8000 #適当に変えて。
 profileToken = "CH01" #適当に変えて。
